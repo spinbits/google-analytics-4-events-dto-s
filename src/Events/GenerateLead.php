@@ -19,10 +19,6 @@ class GenerateLead implements \JsonSerializable, EventInterface
     private string $currency;
     private float $value;
 
-    /**
-     * @param string $currency
-     * @param float $value
-     */
     public function __construct(string $currency = 'USD', float $value = 0)
     {
         $this->currency = $currency;

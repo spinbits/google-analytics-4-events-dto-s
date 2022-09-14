@@ -24,20 +24,12 @@ class EarnVirtualCurrency implements \JsonSerializable, EventInterface
         return 'earn_virtual_currency';
     }
 
-    /**
-     * @param string|null $virtual_currency_name
-     * @return EarnVirtualCurrency
-     */
     public function setVirtualCurrencyName(?string $virtual_currency_name): EarnVirtualCurrency
     {
         $this->virtual_currency_name = $virtual_currency_name;
         return $this;
     }
 
-    /**
-     * @param float|null $value
-     * @return EarnVirtualCurrency
-     */
     public function setValue(?float $value): EarnVirtualCurrency
     {
         $this->value = $value;

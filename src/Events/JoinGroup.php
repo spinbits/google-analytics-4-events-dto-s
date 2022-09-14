@@ -23,10 +23,6 @@ class JoinGroup implements \JsonSerializable, EventInterface
         return 'join_group';
     }
 
-    /**
-     * @param string|null $group_id
-     * @return JoinGroup
-     */
     public function setGroupId(?string $group_id): JoinGroup
     {
         $this->group_id = $group_id;

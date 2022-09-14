@@ -18,9 +18,6 @@ class Search implements \JsonSerializable, EventInterface
 
     private string $search_term;
 
-    /**
-     * @param string $search_term
-     */
     public function __construct(string $search_term)
     {
         $this->search_term = $search_term;

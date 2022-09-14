@@ -46,7 +46,7 @@ jobs:
 
             -
                 name: Run PHPUnit
-                run: composer phpunit
+                run: composer test
 
             -
                 name: Run PHPStan

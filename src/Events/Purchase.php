@@ -22,9 +22,6 @@ class Purchase extends ItemsContainerEvent implements \JsonSerializable, EventIn
     private ?float $shipping = null;
     private ?float $tax = null;
 
-    /**
-     * @param string $transaction_id
-     */
     public function __construct(string $transaction_id)
     {
         $this->transaction_id = $transaction_id;
@@ -35,30 +32,18 @@ class Purchase extends ItemsContainerEvent implements \JsonSerializable, EventIn
         return 'purchase';
     }
 
-    /**
-     * @param string|null $affiliation
-     * @return Purchase
-     */
     public function setAffiliation(?string $affiliation): Purchase
     {
         $this->affiliation = $affiliation;
         return $this;
     }
 
-    /**
-     * @param string|null $coupon
-     * @return Purchase
-     */
     public function setCoupon(?string $coupon): Purchase
     {
         $this->coupon = $coupon;
         return $this;
     }
 
-    /**
-     * @param float|null $shipping
-     * @return Purchase
-     */
     public function setShipping(?float $shipping): Purchase
     {
         $this->value = (float) $this->value - (float) $this->shipping;
@@ -67,10 +52,6 @@ class Purchase extends ItemsContainerEvent implements \JsonSerializable, EventIn
         return $this;
     }
 
-    /**
-     * @param float|null $tax
-     * @return Purchase
-     */
     public function setTax(?float $tax): Purchase
     {
         $this->value = (float) $this->value - (float) $this->tax;

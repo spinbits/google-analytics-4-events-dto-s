@@ -25,20 +25,12 @@ class SelectItem extends ItemsContainerEvent implements \JsonSerializable, Event
         return 'select_item';
     }
 
-    /**
-     * @param string|null $item_list_id
-     * @return SelectItem
-     */
     public function setItemListId(?string $item_list_id): SelectItem
     {
         $this->item_list_id = $item_list_id;
         return $this;
     }
 
-    /**
-     * @param string|null $item_list_name
-     * @return SelectItem
-     */
     public function setItemListName(?string $item_list_name): SelectItem
     {
         $this->item_list_name = $item_list_name;

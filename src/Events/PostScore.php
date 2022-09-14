@@ -20,9 +20,6 @@ class PostScore implements \JsonSerializable, EventInterface
     private ?float $level = null;
     private ?string $character = null;
 
-    /**
-     * @param float $score
-     */
     public function __construct(float $score)
     {
         $this->score = $score;
@@ -33,20 +30,12 @@ class PostScore implements \JsonSerializable, EventInterface
         return 'post_score';
     }
 
-    /**
-     * @param float|null $level
-     * @return PostScore
-     */
     public function setLevel(?float $level): PostScore
     {
         $this->level = $level;
         return $this;
     }
 
-    /**
-     * @param string|null $character
-     * @return PostScore
-     */
     public function setCharacter(?string $character): PostScore
     {
         $this->character = $character;

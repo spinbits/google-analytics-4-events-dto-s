@@ -24,20 +24,12 @@ class LevelUp implements \JsonSerializable, EventInterface
         return 'level_up';
     }
 
-    /**
-     * @param float|null $level
-     * @return LevelUp
-     */
     public function setLevel(?float $level): LevelUp
     {
         $this->level = $level;
         return $this;
     }
 
-    /**
-     * @param string|null $character
-     * @return LevelUp
-     */
     public function setCharacter(?string $character): LevelUp
     {
         $this->character = $character;

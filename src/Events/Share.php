@@ -25,30 +25,18 @@ class Share implements \JsonSerializable, EventInterface
         return 'share';
     }
 
-    /**
-     * @param string|null $method
-     * @return Share
-     */
     public function setMethod(?string $method): Share
     {
         $this->method = $method;
         return $this;
     }
 
-    /**
-     * @param string|null $content_type
-     * @return Share
-     */
     public function setContentType(?string $content_type): Share
     {
         $this->content_type = $content_type;
         return $this;
     }
 
-    /**
-     * @param string|null $item_id
-     * @return Share
-     */
     public function setItemId(?string $item_id): Share
     {
         $this->item_id = $item_id;

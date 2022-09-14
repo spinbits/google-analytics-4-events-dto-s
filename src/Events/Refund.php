@@ -22,9 +22,6 @@ class Refund implements EventInterface
     private ?float $shipping = null;
     private ?float $tax = null;
 
-    /**
-     * @param string $transaction_id
-     */
     public function __construct(string $transaction_id)
     {
         $this->transaction_id = $transaction_id;
@@ -35,40 +32,24 @@ class Refund implements EventInterface
         return 'refund';
     }
 
-    /**
-     * @param string|null $affiliation
-     * @return Refund
-     */
     public function setAffiliation(?string $affiliation): Refund
     {
         $this->affiliation = $affiliation;
         return $this;
     }
 
-    /**
-     * @param string|null $coupon
-     * @return Refund
-     */
     public function setCoupon(?string $coupon): Refund
     {
         $this->coupon = $coupon;
         return $this;
     }
 
-    /**
-     * @param float|null $shipping
-     * @return Refund
-     */
     public function setShipping(?float $shipping): Refund
     {
         $this->shipping = $shipping;
         return $this;
     }
 
-    /**
-     * @param float|null $tax
-     * @return Refund
-     */
     public function setTax(?float $tax): Refund
     {
         $this->tax = $tax;

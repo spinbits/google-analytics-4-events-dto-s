@@ -12,7 +12,6 @@ namespace Spinbits\GoogleAnalytics4EventsDtoS\Events;
 
 use Spinbits\GoogleAnalytics4EventsDtoS\Item\ItemInterface;
 use Spinbits\GoogleAnalytics4EventsDtoS\JsonSerializeTrait;
-use Spinbits\GoogleAnalytics4EventsDtoS\Item\PromotionItem;
 
 class ViewPromotion extends ItemsContainerEvent implements \JsonSerializable, EventInterface
 {
@@ -29,59 +28,36 @@ class ViewPromotion extends ItemsContainerEvent implements \JsonSerializable, Ev
         return 'view_promotion';
     }
 
-    /**
-     * @param string $creative_name
-     * @return ViewPromotion
-     */
     public function setCreativeName(string $creative_name): ViewPromotion
     {
         $this->creative_name = $creative_name;
         return $this;
     }
 
-    /**
-     * @param string $creative_slot
-     * @return ViewPromotion
-     */
     public function setCreativeSlot(string $creative_slot): ViewPromotion
     {
         $this->creative_slot = $creative_slot;
         return $this;
     }
 
-    /**
-     * @param string $location_id
-     * @return ViewPromotion
-     */
     public function setLocationId(string $location_id): ViewPromotion
     {
         $this->location_id = $location_id;
         return $this;
     }
 
-    /**
-     * @param string $promotion_id
-     * @return ViewPromotion
-     */
     public function setPromotionId(string $promotion_id): ViewPromotion
     {
         $this->promotion_id = $promotion_id;
         return $this;
     }
 
-    /**
-     * @param string $promotion_name
-     * @return ViewPromotion
-     */
     public function setPromotionName(string $promotion_name): ViewPromotion
     {
         $this->promotion_name = $promotion_name;
         return $this;
     }
 
-    /**
-     * @param PromotionItem|ItemInterface $item
-     */
     protected function calculate(ItemInterface $item): void
     {
     }

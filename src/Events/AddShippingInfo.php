@@ -24,20 +24,12 @@ class AddShippingInfo extends ItemsContainerEvent implements \JsonSerializable, 
         return 'add_shipping_info';
     }
 
-    /**
-     * @param string|null $coupon
-     * @return AddShippingInfo
-     */
     public function setCoupon(?string $coupon): AddShippingInfo
     {
         $this->coupon = $coupon;
         return $this;
     }
 
-    /**
-     * @param string|null $shipping_tier
-     * @return AddShippingInfo
-     */
     public function setShippingTier(?string $shipping_tier): AddShippingInfo
     {
         $this->shipping_tier = $shipping_tier;

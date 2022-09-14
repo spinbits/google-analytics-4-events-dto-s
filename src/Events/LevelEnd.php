@@ -24,20 +24,12 @@ class LevelEnd implements \JsonSerializable, EventInterface
         return 'level_end';
     }
 
-    /**
-     * @param string|null $level_name
-     * @return LevelEnd
-     */
     public function setLevelName(?string $level_name): LevelEnd
     {
         $this->level_name = $level_name;
         return $this;
     }
 
-    /**
-     * @param bool|null $success
-     * @return LevelEnd
-     */
     public function setSuccess(?bool $success): LevelEnd
     {
         $this->success = $success;

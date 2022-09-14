@@ -18,9 +18,6 @@ class UnlockAchievement implements \JsonSerializable, EventInterface
 
     private string $achievement_id;
 
-    /**
-     * @param string $achievement_id
-     */
     public function __construct(string $achievement_id)
     {
         $this->achievement_id = $achievement_id;

@@ -23,10 +23,6 @@ class LevelStart implements \JsonSerializable, EventInterface
         return 'level_start';
     }
 
-    /**
-     * @param string|null $level_name
-     * @return LevelStart
-     */
     public function setLevelName(?string $level_name): LevelStart
     {
         $this->level_name = $level_name;

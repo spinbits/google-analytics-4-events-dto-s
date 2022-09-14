@@ -23,10 +23,6 @@ class BeginCheckout extends ItemsContainerEvent implements \JsonSerializable, Ev
         return 'begin_checkout';
     }
 
-    /**
-     * @param string|null $coupon
-     * @return BeginCheckout
-     */
     public function setCoupon(?string $coupon): BeginCheckout
     {
         $this->coupon = $coupon;

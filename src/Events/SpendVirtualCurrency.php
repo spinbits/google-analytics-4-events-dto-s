@@ -20,10 +20,6 @@ class SpendVirtualCurrency implements \JsonSerializable, EventInterface
     private float $value;
     private ?string $item_name = null;
 
-    /**
-     * @param string $virtual_currency_name
-     * @param float $value
-     */
     public function __construct(string $virtual_currency_name, float $value)
     {
         $this->virtual_currency_name = $virtual_currency_name;
@@ -35,10 +31,6 @@ class SpendVirtualCurrency implements \JsonSerializable, EventInterface
         return 'spend_virtual_currency';
     }
 
-    /**
-     * @param string $item_name
-     * @return SpendVirtualCurrency
-     */
     public function setItemName(string $item_name): SpendVirtualCurrency
     {
         $this->item_name = $item_name;

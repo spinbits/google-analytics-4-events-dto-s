@@ -24,20 +24,12 @@ class AddPaymentInfo extends ItemsContainerEvent implements \JsonSerializable, E
         return 'add_payment_info';
     }
 
-    /**
-     * @param string|null $coupon
-     * @return AddPaymentInfo
-     */
     public function setCoupon(?string $coupon): AddPaymentInfo
     {
         $this->coupon = $coupon;
         return $this;
     }
 
-    /**
-     * @param string|null $payment_type
-     * @return AddPaymentInfo
-     */
     public function setPaymentType(?string $payment_type): AddPaymentInfo
     {
         $this->payment_type = $payment_type;

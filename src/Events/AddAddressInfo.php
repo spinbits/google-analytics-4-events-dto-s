@@ -23,10 +23,6 @@ class AddAddressInfo extends ItemsContainerEvent implements \JsonSerializable, E
         return 'add_address_info';
     }
 
-    /**
-     * @param string|null $coupon
-     * @return AddAddressInfo
-     */
     public function setCoupon(?string $coupon): AddAddressInfo
     {
         $this->coupon = $coupon;

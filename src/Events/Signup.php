@@ -23,10 +23,6 @@ class Signup implements \JsonSerializable, EventInterface
         return 'sign_up';
     }
 
-    /**
-     * @param string|null $method
-     * @return Signup
-     */
     public function setMethod(?string $method): Signup
     {
         $this->method = $method;

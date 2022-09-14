@@ -24,20 +24,12 @@ class SelectContent implements \JsonSerializable, EventInterface
         return 'select_content';
     }
 
-    /**
-     * @param string|null $content_type
-     * @return SelectContent
-     */
     public function setContentType(?string $content_type): SelectContent
     {
         $this->content_type = $content_type;
         return $this;
     }
 
-    /**
-     * @param string|null $item_id
-     * @return SelectContent
-     */
     public function setItemId(?string $item_id): SelectContent
     {
         $this->item_id = $item_id;

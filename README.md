@@ -1,4 +1,4 @@
-## Google Analytics 4 events dto's
+## Google Analytics 4 events DTO's
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)

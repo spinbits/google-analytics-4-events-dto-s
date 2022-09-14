@@ -23,10 +23,6 @@ class Login implements \JsonSerializable, EventInterface
         return 'login';
     }
 
-    /**
-     * @param string|null $method
-     * @return Login
-     */
     public function setMethod(?string $method): Login
     {
         $this->method = $method;
