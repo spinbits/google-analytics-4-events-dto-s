@@ -1,0 +1,57 @@
+name: Build
+
+on:
+    push:
+        branches-ignore:
+            - 'dependabot/**'
+    pull_request: ~
+    release:
+        types: [created]
+    schedule:
+        -
+            cron: "0 1 * * 6" # Run at 1am every Saturday
+    workflow_dispatch: ~
+
+jobs:
+    tests:
+        runs-on: ubuntu-22.04
+
+        name: "Spinbits Sylius Google Analytics 4 Events Dto's , PHP ${{ matrix.php }}"
+
+        strategy:
+            fail-fast: false
+            matrix:
+                php: ["7.4", "8.0", "8.1"]
+
+        steps:
+            -
+                uses: actions/checkout@v2
+
+            -
+                name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: "${{ matrix.php }}"
+                    extensions: intl
+                    tools: symfony
+                    coverage: none
+
+            -
+                name: Install PHP dependencies
+                run: composer install --no-interaction
+
+            -
+                name: Validate composer.json
+                run: composer validate --ansi --strict
+
+            -
+                name: Run PHPStan
+                run: vendor/bin/phpstan analyse -c phpstan.neon -l max src/
+
+            -
+                name: Run Psalm
+                run: vendor/bin/psalm
+
+            -
+                name: Run PHPUnit
+                run: vendor/bin/phpunit --colors=always
