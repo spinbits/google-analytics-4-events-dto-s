@@ -25,13 +25,13 @@ class ViewItemList extends ItemsContainerEvent implements \JsonSerializable, Eve
         return 'view_item_list';
     }
 
-    public function setItemListId(?string $item_list_id)
+    public function setItemListId(?string $item_list_id): ViewItemList
     {
         $this->item_list_id = $item_list_id;
         return $this;
     }
 
-    public function setItemListName(?string $item_list_name)
+    public function setItemListName(?string $item_list_name): ViewItemList
     {
         $this->item_list_name = $item_list_name;
         return $this;
