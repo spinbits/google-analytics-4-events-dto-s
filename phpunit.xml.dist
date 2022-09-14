@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="spinbits/baselinker-sdk Test Suite">
+        <testsuite name="tests">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

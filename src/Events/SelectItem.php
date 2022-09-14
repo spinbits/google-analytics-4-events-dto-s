@@ -48,5 +48,7 @@ class SelectItem extends ItemsContainerEvent implements \JsonSerializable, Event
     /**
      * {@inheritDoc}
      */
-    protected function calculate(ItemInterface $item): void{}
+    protected function calculate(ItemInterface $item): void
+    {
+    }
 }

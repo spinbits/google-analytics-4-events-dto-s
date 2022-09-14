@@ -48,5 +48,7 @@ class ViewItemList extends ItemsContainerEvent implements \JsonSerializable, Eve
     /**
      * {@inheritDoc}
      */
-    protected function calculate(ItemInterface $item): void{}
+    protected function calculate(ItemInterface $item): void
+    {
+    }
 }

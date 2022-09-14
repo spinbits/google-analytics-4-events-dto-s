@@ -10,7 +10,8 @@ declare(strict_types=1);
 
 namespace Spinbits\GoogleAnalytics4EventsDtoS\Item;
 
-interface ItemInterface{
+interface ItemInterface
+{
 
     public function getCurrency(): string;
     public function getValue(): float;

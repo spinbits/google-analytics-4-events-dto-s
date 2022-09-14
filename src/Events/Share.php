@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Spinbits\GoogleAnalytics4EventsDtoS\Events;
 
-
 use Spinbits\GoogleAnalytics4EventsDtoS\JsonSerializeTrait;
 
 class Share implements \JsonSerializable, EventInterface

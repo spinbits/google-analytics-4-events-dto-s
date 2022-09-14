@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/spinbits/baselinker-sdk).
+We accept contributions via Pull Requests on [Github](https://github.com/spinbits/google-analytics-4-events-dto-s).
 
 
 ## Pull Requests

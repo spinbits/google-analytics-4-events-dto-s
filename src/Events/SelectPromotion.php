@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Spinbits\GoogleAnalytics4EventsDtoS\Events;
 
-
 use Spinbits\GoogleAnalytics4EventsDtoS\Item\Item;
 use Spinbits\GoogleAnalytics4EventsDtoS\Item\ItemInterface;
 use Spinbits\GoogleAnalytics4EventsDtoS\JsonSerializeTrait;
@@ -84,5 +83,7 @@ class SelectPromotion extends ItemsContainerEvent implements EventInterface
     /**
      * @param PromotionItem|Item|ItemInterface $item
      */
-    protected function calculate(ItemInterface $item): void{}
+    protected function calculate(ItemInterface $item): void
+    {
+    }
 }

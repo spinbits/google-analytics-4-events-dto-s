@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Spinbits\GoogleAnalytics4EventsDtoS\Events;
 
-
 use Spinbits\GoogleAnalytics4EventsDtoS\JsonSerializeTrait;
 
 class SpendVirtualCurrency implements \JsonSerializable, EventInterface
@@ -45,6 +44,4 @@ class SpendVirtualCurrency implements \JsonSerializable, EventInterface
         $this->item_name = $item_name;
         return $this;
     }
-
-
 }

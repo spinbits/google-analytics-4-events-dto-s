@@ -27,7 +27,7 @@ $purchase = new Purchase($order->getNumber());
 $purchase->setShipping($order->getShippingTotal());
 $purchase->setTax($order->getTaxTotal());
 
-$purchase->addItem(new Item('item_id', 'item_name'));
+$purchase->addItem(new Item('item_id', 'item_name', 1.00, 'USD'));
 
 //get event as array
 $purchase->jsonSerialize();
@@ -65,17 +65,17 @@ If you discover any security related issues, please email office@spinbits.io ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/spinbits/baselinker-sdk.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/spinbits/google-analytics-4-events-dto-s.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/spinbits/baselinker-sdk/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/spinbits/baselinker-sdk.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/spinbits/baselinker-sdk.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/spinbits/baselinker-sdk.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/spinbits/google-analytics-4-events-dto-s/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/spinbits/google-analytics-4-events-dto-s.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/spinbits/google-analytics-4-events-dto-s.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/spinbits/google-analytics-4-events-dto-s.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/spinbits/baselinker-sdk
-[link-travis]: https://travis-ci.org/spinbits/baselinker-sdk
-[link-scrutinizer]: https://scrutinizer-ci.com/g/spinbits/baselinker-sdk/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/spinbits/baselinker-sdk
-[link-downloads]: https://packagist.org/packages/spinbits/baselinker-sdk
+[link-packagist]: https://packagist.org/packages/spinbits/google-analytics-4-events-dto-s
+[link-travis]: https://travis-ci.org/spinbits/google-analytics-4-events-dto-s
+[link-scrutinizer]: https://scrutinizer-ci.com/g/spinbits/google-analytics-4-events-dto-s/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/spinbits/google-analytics-4-events-dto-s
+[link-downloads]: https://packagist.org/packages/spinbits/google-analytics-4-events-dto-s
 [link-author]: https://github.com/spinbits
 [link-contributors]: ../../contributors

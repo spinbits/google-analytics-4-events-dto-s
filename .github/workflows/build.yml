@@ -45,13 +45,16 @@ jobs:
                 run: composer validate --ansi --strict
 
             -
+                name: Run PHPUnit
+                run: composer phpunit
+
+            -
                 name: Run PHPStan
-                run: vendor/bin/phpstan analyse -c phpstan.neon -l max src/
+                run: composer phpstan
 
             -
                 name: Run Psalm
-                run: vendor/bin/psalm
+                run: composer psalm
 
-            -
-                name: Run PHPUnit
-                run: vendor/bin/phpunit --colors=always
+            -   name: Run Code Style
+                run: composer check-style

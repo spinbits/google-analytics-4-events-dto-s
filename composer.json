@@ -10,11 +10,11 @@
         }
     ],
     "require": {
-        "php": "~7.4 || ^8.0"
+        "php": "~7.4 || ^8.0 || ^8.1"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=8.0",
-        "squizlabs/php_codesniffer": "^3.0",
+        "squizlabs/php_codesniffer": "^3.7",
         "phpstan/phpstan": "^1.8",
         "vimeo/psalm": "^4.27"
     },
@@ -25,12 +25,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spinbits\\BaselinkerSdk\\Tests\\": "tests"
+            "Spinbits\\GoogleAnalytics4EventsDtoS\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "check-style": "phpcs src tests",
+        "phpstan": "phpstan analyse -c phpstan.neon -l max src/",
+        "psalm": "psalm",
+        "test": "phpunit --colors=always",
+        "check-style": "phpcs src",
         "fix-style": "phpcbf src tests"
     }
 }

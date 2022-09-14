@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `spinbits/baselinker-sdk` will be documented in this file.
+All notable changes to `spinbits/google-analytics-4-events-dto-s` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 

@@ -9,6 +9,7 @@
 declare(strict_types=1);
 
 namespace Spinbits\GoogleAnalytics4EventsDtoS\Events;
+
 use Spinbits\GoogleAnalytics4EventsDtoS\JsonSerializeTrait;
 
 class ViewItem extends ItemsContainerEvent implements \JsonSerializable, EventInterface

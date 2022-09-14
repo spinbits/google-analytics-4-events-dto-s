@@ -82,5 +82,7 @@ class ViewPromotion extends ItemsContainerEvent implements \JsonSerializable, Ev
     /**
      * @param PromotionItem|ItemInterface $item
      */
-    protected function calculate(ItemInterface $item): void{}
+    protected function calculate(ItemInterface $item): void
+    {
+    }
 }
