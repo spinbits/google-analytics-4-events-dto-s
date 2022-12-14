@@ -5,6 +5,9 @@
 [![Build Status][ico-travis]][link-travis]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+## Need help ?
+Drop us a message hello@spinbits.io
+
 ## Description
 
 This package is implementation of [Google Analytics 4](https://developers.google.com/analytics/devguides/collection/ga4), [events](https://developers.google.com/analytics/devguides/collection/ga4/reference/events).
@@ -55,11 +58,6 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Security
 
 If you discover any security related issues, please email office@spinbits.io instead of using the issue tracker.
-
-## Credits
-
-- [Jakub Lech][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
