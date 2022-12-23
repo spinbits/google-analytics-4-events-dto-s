@@ -3,10 +3,9 @@
     "description": "Google Analytics 4 Dto's",
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Jakub Lech",
-            "email": "j.lech@spinbits.io"
+    "authors": [  {
+            "name": "Spinbits",
+            "homepage": "https://spinbits.io"
         }
     ],
     "require": {
